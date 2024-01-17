@@ -4,64 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="acceuil.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
     <title>Réservation de Train</title>
 </head>
 <body>
     <header>
         <h1>TRAINRESERVE</h1>
         <nav>
+            <a href="connexion.html">Connexion</a>
             <a href="#">Billets</a>
             <a href="#">Offres</a>
-            <a href="connexion.html">Connexion</a>
+            <a href="#">Avis</a>
         </nav>
     </header>
 
     <main>
+        <div class="accueil" > 
+            <img src="images/seineparis.jpg" id="seineparis">
+            <h2 id="accroche">Réservez sans hesiter,<br>vos billets sont
+                certifiés et 100% remboursables !</h2>
+        </div>
+    
         <section class="search-form">
-            <h2>Rechercher un Train</h2>
-            <form action="#" method="post">
-                <label for="departure">Départ:</label>
-                <input type="text" id="depart" name="departure" required>
-
-                <label for="destination">Destination:</label>
-                <input type="text" id="destination" name="destination" required>
-
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
-
-                <button type="submit">Rechercher</button>
+            <form class="formulaire">
+                    <div class="formul">
+                        <label class="label" for="depart">Départ</label>
+                        <input type="text"placeholder=" gare, adresse, lieu" required id="depart">
+                    </div>
+                    <div class="formul">
+                        <label class="label" for="arrivée">Arrivée</label>
+                        <input type="text"placeholder="gare, adresse, lieu" required id="arrivée">
+                    </div>
+                    <div class="formul">
+                        <label class="label" for="aller">Date aller</label>
+                        <input type="date"placeholder="15/02/2021" required id="aller">
+                    </div>
+                    <div class="formul">
+                        <label class="label" for="retour">Date retour</label>
+                        <input type="date"placeholder="Date retour" required id="retour">
+                    </div>
+                    <div id="container">
+                        <button class="button">Rechercher</button>
+                    </div>
             </form>
         </section>
-
-        <section class="train-list">
-            <h2>Résultats de la Recherche</h2>
-            <ul>
-                <li>
-                    <span class="train-name">Train Express</span>
-                    <span class="departure-time">10:00 AM</span>
-                    <span class="destination">Montpellier</span>
-                    <button>Réserver</button>
-                </li>
-                <li>
-                    <span class="train-name">Train Express</span>
-                    <span class="departure-time">15:00 AM</span>
-                    <span class="destination">Nice</span>
-                    <button>Réserver</button>
-                </li>
-                <li>
-                    <span class="train-name">Train Express</span>
-                    <span class="departure-time">10:00 AM</span>
-                    <span class="destination">Marseille</span>
-                    <button>Réserver</button>
-                </li>
-                <li>
-                    <span class="train-name">Train Express</span>
-                    <span class="departure-time">07:00 AM</span>
-                    <span class="destination">Paris</span>
-                    <button>Réserver</button>
-                </li>
-            </ul>
+    
+        <section class="destinations">
+            <h2 class="topdestinations">Top des destinations</h2>
+                <div class="slider">
+                    <div class="slide">
+                        <figure>
+                        <img class = "slide " src="images/bordeaux.jpg" alt="bordeaux" >
+                        <figcaption>Bordeaux</figcaption>
+                        </figure>
+    
+                        <figure>
+                        <img class = "slide" src="images/panam1.jpg" alt="paris">
+                        <figcaption>Paris</figcaption>
+                        </figure>
+    
+                        <figure>
+                        <img class="slide" src="images/nice plage.jpg" alt="nice">
+                        <figcaption>Nice</figcaption>
+                        </figure>
+                    <div>
+                </div> 
         </section>
+        
+        <section class="lesavis">
+            <h2 id="av">Les avis<br></h2> 
+            <div class="container flex">
+                    <div class="avis">Avis client 1<br><p id="name"><img src="images/man.svg" id="personae"> Dupont<br></p> 
+                        <p><i>Prix attractifs et garanties
+                       </i></p></div>
+                            
+                    <div class="avis">Avis client 2<br><p id="name"><img src="images/boy.svg" id="personae"> Ruel<br></p> 
+                        <p><i>vraiment sécurisé
+                        </i></p></div>
+    
+                    <div class="avis">Avis client 3<br><p id="name"><img src="images/wife1.svg" id="personae"> Ruchier<br></p> 
+                        <p><i>fluides, service de qualité
+                       </i></p></div>
+                    
+                    <div class="avis">Avis client 4<br><p id="name"><img src="images/woman.svg" id="personae"> Dussautier<br></p> 
+                        <p><i>Je vous recommande vivement ce site
+                        </i></p></div>
+            </div>  
+        </section>           
     </main>
 
     <footer>
@@ -77,7 +110,7 @@
 
             <div class="sub-tabs">
                 <h3>Entreprise</h3>
-                <ul class="listes">
+                <ul class="liste-entreprise">
                     <li><a href="#">Qui sommes nous?</a></li>
                 </ul>
             </div>
@@ -91,18 +124,17 @@
             </div>
 
             <div class="sub-tabs">
-                <h3>SUIVEZ NOUS</h3>
+                <h3>Suivez-nous</h3>
                 <ul class="listes">
-                    <li><a href="#"><img src="images/facebook.svg" alt="icones reseaux sociaux" id="imgfooter">Facebook</a></li>
-                    <li><a href="#"><img src="images/twitter.svg" alt="icones reseaux sociaux" id="imgfooter">Twitter</a></li>
-                    <li><a href="#"><img src="images/instagram.svg" alt="icones reseaux sociaux" id="imgfooter">Instagram</a></li>
-                    <li><a href="#"><img src="images/snapchat.svg" alt="icones reseaux sociaux" id="imgfooter">Snap chat</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
                 </ul>
             </div>
 
         </div>
     
-        <p>&copy; 2024 Réservation de Train By Yannick TCHALLA AND N'TOUMEY  Jean-Philippe</p>
+        <p class="copyright">&copy; 2024 Réservation de Train By Yannick TCHALLA AND N'TOUMEY  Jean-Philippe</p>
     </footer>
 </body>
 </html>

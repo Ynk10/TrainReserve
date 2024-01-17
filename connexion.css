@@ -1,105 +1,44 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #3498db;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-
-h1 {
-    margin: 0;
+ 
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    padding: 5px;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s ease;
+ 
+.login-form {
+    max-width: 300px;
+    margin: 0 auto;
 }
-
-nav a:hover {
-    border-bottom: 2px solid #fff;
-}
-
-main {
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-.search-form, .train-list {
-    margin-bottom: 20px;
-}
-
-form {
-    display: grid;
-    gap: 10px;
-}
-
+ 
 label {
-    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
 }
-
-input, button {
+ 
+input {
+    width: 100%;
     padding: 8px;
+    margin-bottom: 16px;
     box-sizing: border-box;
 }
-
+ 
 button {
-    background-color: #3498db;
+    background-color: #4caf50;
     color: #fff;
+    padding: 10px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-}
-
-
-.train-name {
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.departure-time {
-    margin-right: 10px;
-}
-
-.destination {
-    flex-grow: 1;
-}
-
-footer {
-    background-color:#2A2727;
-    size: 5px;
-    color:white;
-    flex-shrink: 0;
-    border-top: 1px dashed #000;
     width: 100%;
-    background:black;
-}
-
-.footer-tab {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    font-size: 20px;
-    padding: 50px 0 100px;
-}
-
-.sub-tabs{
-    width: 25%;
-    margin: 0 30px;
-}
-
-.listes li {
-    padding: 2px 0;
 }

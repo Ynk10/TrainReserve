@@ -1,9 +1,11 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #b2d7d9;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
-
 header {
     background-color: #3498db;
     color: #fff;
@@ -14,83 +16,171 @@ header {
     align-items: center;
 }
 
-h1 {
-    margin: 0;
+/*______les titres_______*/
+#accroche,
+#av{
+    font-family:'Roboto', sans-serif;
+}
+.topdestinations{
+    font-family: 'Roboto', sans-serif;
 }
 
-nav a {
+.inner{
+    width: 80%;
+    margin: auto;
+}
+
+.topdestinations {
+     text-align: center;
+     padding-top: 40px;
+}
+
+/*__________________________________ Partie accueil_____________________________*/
+#seineparis{
+    width: 750px;
+    height: 300px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+   }
+   .accueil{
+       position: relative;
+       text-align: center;
+   }
+   
+   #accroche{
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       color: white;
+   }
+/*_____________________________section carroussel________________________________*/
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: inline-flex;
+    flex-flow: column;
+    padding: 0px;
+    max-width: 300px;
+    margin: auto;
+}
+
+img.slide{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.slide{
+    text-align: center;
+}
+
+figcaption {
+    background-color: #222;
     color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+/*_________________________container____________________________________________________*/
+#personae{
+    width: 30px;
+}
+
+.container.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: .50em;
+    height: 200px;
+    box-shadow: 0px 0px 5px #333;
+    border-radius: 4px;
+    background: light-gray;
+}
+
+.container p {
+    text-align: center;
+    background:#FF9800;
+    margin: 1em;
+    padding: 1em;
+}
+
+#container{
+    padding-top: 60px;
+}
+/*______________________________________*class avis_____________________________________*/
+
+.avis{ background-color:#FAFAFA; 
+    color: darkblue;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;  
+}
+
+#av{
+    text-align: center;
+}
+
+.lesavis{
+    padding-top: 60px;
+}
+
+.formul{
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.button{
     padding: 5px;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s ease;
-}
+    border-radius: 10px;
+    background-color: #18CBD9;
+    text-align:center;
+    height: 40px;
+    width: 120px;
+    }
 
-nav a:hover {
-    border-bottom: 2px solid #fff;
-}
+.search-form{
+    text-align: center;
+    }
 
-main {
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-.search-form, .train-list {
-    margin-bottom: 20px;
-}
-
-form {
-    display: grid;
-    gap: 10px;
-}
 
 label {
     font-weight: bold;
 }
 
-input, button {
-    padding: 8px;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.train-name {
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.departure-time {
-    margin-right: 10px;
-}
-
-.destination {
-    flex-grow: 1;
-}
-
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
+    background-color:#91a5b9;
+    size: 5px;
+    color:white;
+    flex-shrink: 0;
+    border-top: 1px dashed #000;
     width: 100%;
-    bottom: 0;
+}
+
+.footer-tab {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+}
+
+.sub-tabs{
+    width: 25%;
+    margin: 0 30px;
+}
+
+.listes li {
+    padding: 2px 0;
+}
+
+.copyright{
+    text-align: center;
 }

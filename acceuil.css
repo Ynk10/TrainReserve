@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b2d7d9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*______les titres_______*/
+#accroche,
+#av{
+    font-family:'Roboto', sans-serif;
+}
+.topdestinations{
+    font-family: 'Roboto', sans-serif;
+}
+
+.inner{
+    width: 80%;
+    margin: auto;
+}
+
+.topdestinations {
+     text-align: center;
+     padding-top: 40px;
+}
+
+/*__________________________________ Partie accueil_____________________________*/
+#seineparis{
+    width: 750px;
+    height: 300px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+   }
+   .accueil{
+       position: relative;
+       text-align: center;
+   }
+   
+   #accroche{
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       color: white;
+   }
+/*_____________________________section carroussel________________________________*/
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: inline-flex;
+    flex-flow: column;
+    padding: 0px;
+    max-width: 300px;
+    margin: auto;
+}
+
+img.slide{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.slide{
+    text-align: center;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+/*_________________________container____________________________________________________*/
+#personae{
+    width: 30px;
+}
+
+.container.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: .50em;
+    height: 200px;
+    box-shadow: 0px 0px 5px #333;
+    border-radius: 4px;
+    background: light-gray;
+}
+
+.container p {
+    text-align: center;
+    background:#FF9800;
+    margin: 1em;
+    padding: 1em;
+}
+
+#container{
+    padding-top: 60px;
+}
+/*______________________________________*class avis_____________________________________*/
+
+.avis{ background-color:#FAFAFA; 
+    color: darkblue;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;  
+}
+
+#av{
+    text-align: center;
+}
+
+.lesavis{
+    padding-top: 60px;
+}
+
+.formul{
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.button{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #18CBD9;
+    text-align:center;
+    height: 40px;
+    width: 120px;
+    }
+
+.search-form{
+    text-align: center;
+    }
+
+
+label {
+    font-weight: bold;
+}
+
+footer {
+    background-color:#91a5b9;
+    size: 5px;
+    color:white;
+    flex-shrink: 0;
+    border-top: 1px dashed #000;
+    width: 100%;
+}
+
+.footer-tab {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+}
+
+.sub-tabs{
+    width: 25%;
+    margin: 0 30px;
+}
+
+.listes li {
+    padding: 2px 0;
+}
+
+.copyright{
+    text-align: center;
+}
